@@ -38,7 +38,7 @@ public class SupplyController {
     }
 
     @GetMapping("/{name}/first_free")
-    public Supply getFirstFreeSupplyByName(String name) {
+    public Supply getFirstFreeSupplyByName(@PathVariable String name) {
         return service.getFirstFreeSupplyByName(name);
     }
 }
