@@ -9,6 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Table(name="supplies")
+@EqualsAndHashCode
 public class Supply {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,6 +17,7 @@ public class Supply {
     private Long id;
     @Column(name="name")
     @Setter
+
     private String name;
     @Column(name="username")
     @Setter
